@@ -1,10 +1,16 @@
-import React from 'react';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFrown } from "@fortawesome/free-solid-svg-icons";
 
-const NoGifs = props => (
-  <li className='no-gifs'>
-    <i className="material-icons icon-gif">sentiment_very_dissatisfied</i>
-    <h3>Sorry, no GIFs match your search.</h3>
-  </li>
-);
+const NoGifs = () => {
+  return (
+    <li className="no-gifs">
+      <div className="icon">
+        <FontAwesomeIcon icon={faFrown} />
+      </div>
+      <h3>Sorry, no GIFs match your search.</h3>
+    </li>
+  );
+};
 
-export default NoGifs
+export default NoGifs;

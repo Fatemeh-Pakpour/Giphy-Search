@@ -92,7 +92,10 @@ button {
   height: 140px;
   padding-top: 62px;
   text-align: center;
-  font-size: 1.25em;
+  font-size: 2em;
+}
+.icon {
+  font-size: 4em; 
 }
 
 .gif-list a {
